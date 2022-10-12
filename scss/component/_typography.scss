@@ -1,0 +1,32 @@
+@use '../custom' as *;
+
+.text-1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    display: block;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.text-2{
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: block;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.text-3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: block;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.para-text-light{
+    font-size: 1.05rem;
+    color: $gray-400;
+}
+
+.para-text-dark{
+    font-size: 1.05rem;
+    color: $gray-700;
+}

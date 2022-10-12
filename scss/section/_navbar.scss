@@ -1,0 +1,83 @@
+@use '../custom' as *;
+
+.smp-navbar {
+    background-color: rgb(255, 255, 255);
+    &-brand{
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    i {
+        font-size: 1.2rem;
+        
+     }
+    &-toggler {
+        i {
+            font-size: 1.5rem;
+        }
+        margin-right: 0.5rem;
+    }
+    &-links-content {
+        @include media-breakpoint-down(sm){
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-top: 0.5rem;
+            
+        }
+    }
+    &-links-container{
+        .icon{
+            text-align: center;
+            @include media-breakpoint-up(sm){
+                display: none;
+            }
+        }
+        @include media-breakpoint-down(sm){
+            //display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 0vh;
+            overflow: hidden;
+            background-color: rgb(255, 255, 255);
+            box-shadow:  0 .125rem .25rem rgba($black, .175);
+
+            border-bottom-right-radius: 1.5rem;
+            border-bottom-left-radius: 1.5rem;
+        }
+        @include media-breakpoint-up(sm){
+            display: flex;
+        }
+
+        &-show{
+
+            height: 13.5rem !important;
+        
+        }
+        transition: height 0.2s;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+}
+
+.smp-nav-item{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    
+}
+.smp-navbar-collapse{
+    &-content{
+        @include media-breakpoint-down(sm){
+            justify-content: flex-end;
+        }
+        @include media-breakpoint-up(sm){
+            justify-content: center;
+        }
+    }
+}

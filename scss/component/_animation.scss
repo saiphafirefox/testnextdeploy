@@ -1,0 +1,27 @@
+@use '../custom' as *;
+
+
+@keyframes typewriter{
+    
+    from{width: 0;}
+    to{
+        width: 21rem;
+    }
+}
+
+@keyframes typewriter-xs{
+    
+    from{width: 0;}
+    to{
+        width: 15rem;
+    }
+}
+
+@keyframes blinkingCursor {
+    from{
+        border-right-color: rgba($gray-900, 0.75);
+    }
+    to{
+        border-right-color: rgba($gray-900, 0);
+    }
+}

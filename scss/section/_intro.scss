@@ -1,0 +1,47 @@
+@use '../custom' as *;
+@use '../component/animation' as *;
+
+
+
+.intro-section{
+    @include media-breakpoint-down(sm){
+        text-align: center;
+    }
+}
+
+
+
+.animated-text{
+    border-right: 2px solid rgba($gray-900, 0.75);
+    overflow: hidden;
+    width: 0;
+    display: block;
+    white-space: nowrap;
+    @media screen and (max-width:300px){
+        animation: typewriter-xs 3s steps(40) 0.5s 1 normal both, 
+        blinkingCursor 500ms steps(40) infinite normal;
+    }
+    @media screen and (min-width:300px){
+        animation: typewriter 3s steps(40) 0.5s 1 normal both, 
+        blinkingCursor 500ms steps(40) infinite normal;
+    }
+    
+}
+.desc-text-1{
+    font-size: 1.3rem;
+    color: $gray-700;
+    @media screen and (max-width:300px){
+        font-size: 1rem;
+    }
+}
+.text-developer{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $primary;
+    font-family: 'Poppins', sans-serif;
+    border: none !important;
+    @media screen and (max-width:300px){
+        font-size: 1.1rem;
+    }
+}
+

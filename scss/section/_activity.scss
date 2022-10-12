@@ -1,0 +1,35 @@
+@use '../custom' as *;
+
+.activity-box{
+    width: 100%;
+    height: 18.5rem;
+    position: relative;
+    span{
+        width: 100% !important;
+        height: 100% !important;
+        
+        img {
+            object-fit: cover;
+        }
+        
+    }
+    &-footer{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 25%;
+        background-color: rgba($gray-200,0.75);
+
+        div {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+        }
+    }
+    
+}

@@ -1,0 +1,69 @@
+@use '../custom' as *;
+@use '../component/mixin' as *;
+
+.project-box{
+    width: 100%;
+    height: 15rem;
+    span{
+        width: 100% !important;
+        height: 100% !important;
+        
+        img {
+            object-fit: cover;
+        }
+    }
+}
+
+.web-project {
+    width: 100%;
+    &-description{
+        @include media-breakpoint-down(md){
+          padding-top: 2rem;
+        }
+    }
+}
+
+.carousel-indicators{
+    position: relative !important;
+    padding-top: 35px;
+}
+
+.carousel-indicator-index{
+
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+    background-color: $primary !important;
+    
+}
+
+.embeded-youtube{
+
+    width: 100%;
+    height: 15rem;
+    position: relative;
+    @include media-breakpoint-down(md){
+        height: 17rem;
+    }
+    &-play-btn{
+        @include absCenter();
+        i {
+            font-size: 4rem;
+            color: #FF0000;
+        }
+    }
+    .embeded-youtube-cover{
+        width: 100%;
+        height: 100%;
+        border: 5px solid $primary;
+        span{
+            width: 100% !important;
+            height: 100% !important;
+            
+            img {
+                object-fit: cover;
+            }
+            
+        }
+    }
+}

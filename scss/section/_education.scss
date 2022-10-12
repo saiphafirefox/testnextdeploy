@@ -1,0 +1,11 @@
+@use '../custom' as *;
+
+
+.education-section {
+    background-color: $secondary;
+    &-matriculation {
+        @include media-breakpoint-up(md){
+            border-right: 1px solid $light;
+        }
+    }
+}
