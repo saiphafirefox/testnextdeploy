@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import IntroImg from '../../public/images/intro.png'
-import waveSVG from '../../public/images/about/wave.svg'
+
 
 function Introduction() {
   return (
@@ -9,7 +9,9 @@ function Introduction() {
       <div className='container'>
         <div className='row intro-section mt-md-5 pt-md-5'>
           <div className='col-sm-12 col-md-6 '>
-            <Image className='img-fluid' src={IntroImg} width={200} height={200} alt="Introduction image" />
+            <Image className='img-fluid' src={IntroImg} width={200} height={200} 
+            placeholder="blur" blurDataURL='/images/blur/avatar.png'
+            alt="Sai Marn Pha avatar" />
           </div>
           <div className='col-sm-12 col-md-6 text-start order-md-first'>
               <span className='text-1 text-dark'>Hi, I&apos;m Sai.</span>

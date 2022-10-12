@@ -17,7 +17,7 @@ function Home() {
         <meta name="description" content="Sai Marn Pha portfolio | saimarnpha.com" />
         <meta name="keywords" content="Sai Marn Pha. Sai Marn Pha portfolio" />
         <meta name="author" content="Sai Marn Pha" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/fav.png" />
+        <link rel="icon" type="image/x-icon" sizes="16x16" href="/favicon.ico" />
       </Head>
       <Introduction/>
       <About/>

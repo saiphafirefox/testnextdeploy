@@ -9,7 +9,9 @@ function About() {
         <div className='container about-section-container'>
             <div className='row align-items-center'>
                 <div className='col-sm-12 col-md-6 about-section-img'>
-                    <Image className='img-fluid' src={myImg} width={350} height={350} alt="About image" />
+                    <Image className='img-fluid' src={myImg} width={350} height={350}
+                    placeholder="blur" blurDataURL='/images/blur/me.png' 
+                    alt="Sai Marn Pha Image" />
                 </div>
                 <div className='col-sm-12 col-md-6 about-section-desc'>
                     <span className='text-2 text-light'>Who am I?</span>
