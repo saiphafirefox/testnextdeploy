@@ -23,7 +23,7 @@ function Project() {
                   <div className="carousel-item active" data-bs-interval={carouselInterval}>
                     <WebProject img={AsenwiLandingImg} 
                     demoLink="https://asenwi.com"
-                    sourceCode="https://github.com/SaiPha454/POS"
+                    sourceCode="https://github.com/SaiPha454/asenwi"
                     text="Landing Page" />
                   </div>
                   <div className="carousel-item" data-bs-interval={carouselInterval}>

@@ -1,5 +1,5 @@
 
-import '../styles/css/main.css'
+import '../styles/css/main.css';
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import '../styles/google-font.css';
 import Navbar from '../components/navbar/Navbar'

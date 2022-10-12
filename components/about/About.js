@@ -18,7 +18,8 @@ function About() {
                         performant and delightful software for users.
                         I am also a badminton player 🏸
                     </p>
-                    <a href='https://drive.google.com/file/d/1vFitTWRlaN1SLeexa8lFzvkP6ctoyVff/view' target="_blank"
+                    <a href='https://drive.google.com/file/d/1vFitTWRlaN1SLeexa8lFzvkP6ctoyVff/view'
+                     target="_blank" rel="noreferrer"
                     type='button' className='btn btn-outline-primary mt-3 cv-button'>
                         Download CV <i className="bi bi-download"></i>
                     </a>

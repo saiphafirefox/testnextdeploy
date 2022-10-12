@@ -2,6 +2,7 @@ import React,{useEffect, useRef} from 'react'
 import CloseMenuButton from './CloseMenuButton';
 import NavLink from './NavLink';
 import OpenMenuButton from './OpenMenuButton';
+import Link from 'next/link';
 
 function Navbar() {
 
@@ -18,8 +19,8 @@ function Navbar() {
         <div className='container'>
             <div className='row py-4'>
                 {/* Column One */}
-                <div className='col-7 col-sm-4 col-md-3 col-lg-3'>
-                    <a href='/' className='smp-navbar-brand'>Sai Marn Pha</a>
+                <div className='col-7 col-sm-4 col-md-3 col-lg-3 smp-navbar-brand'>
+                    <Link href='/' >Sai Marn Pha</Link>
                 </div>
                 {/* Column Two */}
                 <div className='smp-navbar-collapse col-5 col-sm-8 col-md-9 col-lg-9'>

@@ -7,15 +7,19 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "compile:sass": "sass --watch scss:styles/css --load-path=node_modules/"
+    "compile:sass": "sass --watch scss:styles/css --load-path=node_modules/",
+    "purge:css": "purgecss --css styles/css/main.css --content components/*.js --output styles/css/dist --config postcss.config.js"
   },
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
     "autoprefixer": "^10.4.12",
     "bootstrap": "^5.2.2",
     "bootstrap-icons": "^1.9.1",
     "next": "12.3.1",
     "postcss": "^8.4.17",
     "postcss-cli": "^10.0.0",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^7.8.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "^1.55.0"

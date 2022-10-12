@@ -7,19 +7,19 @@ function Footer() {
             <div>
                 <span className='text-2 d-inline'>Sai Marn Pha</span>
                 <div className='d-sm-block d-md-inline'>
-                    <a target="_blank" 
+                    <a target="_blank" rel="noreferrer"
                     href='https://github.com/SaiPha454'
                     className='ms-md-5 mx-2 footer-icon'>
                         <i className="bi bi-github"></i>
                     </a>
                     <a className='mx-2 footer-icon'
-                        target="_blank"
+                        target="_blank" rel="noreferrer"
                         href="https://www.facebook.com/sai.m.pha.12"
                     >
                         <i className="bi bi-facebook"></i>
                     </a>
                     <a className='mx-2 footer-icon'
-                        target="_blank"
+                        target="_blank" rel="noreferrer"
                         href="mailto: saimarnpha@gmail.com"
                     >
                         <i className="bi bi-envelope-fill"></i>

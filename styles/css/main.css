@@ -24691,8 +24691,8 @@ textarea.form-control-lg {
 .smp-navbar {
   background-color: rgb(255, 255, 255);
 }
-.smp-navbar-brand {
-  font-size: 1.2rem;
+.smp-navbar-brand a {
+  font-size: 1.3rem;
   font-weight: 700;
   text-decoration: none;
 }

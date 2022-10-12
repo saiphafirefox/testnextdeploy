@@ -22,10 +22,12 @@ function Activity() {
                 <ActivityBox img={HighSchoolAward} label="Nothern Shan State Top 5th student award 2017" />
                 <ActivityBox img={MOngoDBCertificate} 
                   label={<>MongoDB Certificates
-                  <a className='ms-1' target="_blank" href='https://www.linkedin.com/in/sai-marn-pha-071115237'>See More</a></>} />
+                  <a className='ms-1' target="_blank" rel="noreferrer"
+                    href='https://www.linkedin.com/in/sai-marn-pha-071115237'>See More</a></>} />
                 <ActivityBox img={RedisCertificate} 
                   label={<>Redis Certificates 
-                  <a className='ms-1' target="_blank" href='https://www.linkedin.com/in/sai-marn-pha-071115237'>See More</a></>} />
+                  <a className='ms-1' target="_blank" rel="noreferrer"
+                    href='https://www.linkedin.com/in/sai-marn-pha-071115237'>See More</a></>} />
             </div>
         </div>
     </div>

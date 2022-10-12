@@ -23,7 +23,7 @@ function Introduction() {
               </p>
               <a className='btn btn-sm btn-primary text-white fs-5' type='button'
               href='https://drive.google.com/file/d/1vFitTWRlaN1SLeexa8lFzvkP6ctoyVff/view'
-              target="_blank"
+              target="_blank" rel="noreferrer"
               >Hire me</a>
           </div>
           

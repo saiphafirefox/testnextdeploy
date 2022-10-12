@@ -3,9 +3,11 @@
 .smp-navbar {
     background-color: rgb(255, 255, 255);
     &-brand{
-        font-size: 1.2rem;
-        font-weight: 700;
-        text-decoration: none;
+        a {
+            font-size: 1.3rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
     }
     i {
         font-size: 1.2rem;
