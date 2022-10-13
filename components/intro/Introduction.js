@@ -9,9 +9,11 @@ function Introduction() {
       <div className='container'>
         <div className='row intro-section mt-md-5 pt-md-5'>
           <div className='col-sm-12 col-md-6 '>
-            <Image className='img-fluid' src={IntroImg} width={200} height={200} 
-            placeholder="blur" blurDataURL='/images/blur/avatar.png'
-            alt="Sai Marn Pha avatar" />
+            <div className='avatar'>
+              <Image className='img-fluid' src={IntroImg} width={200} height={200} 
+              placeholder="blur" blurDataURL='/images/blur/avatar.png'
+              alt="Sai Marn Pha avatar" />
+            </div>
           </div>
           <div className='col-sm-12 col-md-6 text-start order-md-first'>
               <span className='text-1 text-dark'>Hi, I&apos;m Sai.</span>
@@ -20,7 +22,7 @@ function Introduction() {
               </span>
               
               <p className='para-text-dark'>
-                Interested in solving development. 
+                Interested in software development. 
                 Willing to help society through technology.
               </p>
               <a className='btn btn-sm btn-primary text-white fs-5' type='button'

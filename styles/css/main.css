@@ -8245,11 +8245,13 @@ textarea.form-control-lg {
 .para-text-light {
   font-size: 1.05rem;
   color: #ced4da;
+  font-family: "Roboto Slab", serif;
 }
 
 .para-text-dark {
   font-size: 1.05rem;
   color: #495057;
+  font-family: "Roboto Slab", serif;
 }
 
 :root {
@@ -32991,7 +32993,7 @@ textarea.form-control-lg {
     width: 0;
   }
   to {
-    width: 21rem;
+    width: 17.8rem;
   }
 }
 @keyframes typewriter-xs {
@@ -32999,7 +33001,7 @@ textarea.form-control-lg {
     width: 0;
   }
   to {
-    width: 15rem;
+    width: 16rem;
   }
 }
 @keyframes blinkingCursor {
@@ -33010,9 +33012,15 @@ textarea.form-control-lg {
     border-right-color: rgba(33, 37, 41, 0);
   }
 }
+.avatar {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
 @media (max-width: 575.98px) {
-  .intro-section {
-    text-align: center;
+  .avatar {
+    margin: auto;
   }
 }
 
@@ -33023,14 +33031,14 @@ textarea.form-control-lg {
   display: block;
   white-space: nowrap;
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 301px) {
   .animated-text {
-    animation: typewriter-xs 3s steps(40) 0.5s 1 normal both, blinkingCursor 500ms steps(40) infinite normal;
+    animation: typewriter-xs 3s steps(40) 0.5s 1 normal both, blinkingCursor 500ms steps(40) 1 normal;
   }
 }
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 301px) {
   .animated-text {
-    animation: typewriter 3s steps(40) 0.5s 1 normal both, blinkingCursor 500ms steps(40) infinite normal;
+    animation: typewriter 3s steps(40) 0.5s 1 normal both, blinkingCursor 500ms steps(40) 1 normal;
   }
 }
 
@@ -33038,20 +33046,20 @@ textarea.form-control-lg {
   font-size: 1.3rem;
   color: #495057;
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 301px) {
   .desc-text-1 {
     font-size: 1rem;
   }
 }
 
 .text-developer {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #1778F2;
   font-family: "Poppins", sans-serif;
   border: none !important;
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 301px) {
   .text-developer {
     font-size: 1.1rem;
   }
@@ -41288,6 +41296,13 @@ textarea.form-control-lg {
   .about-section-img {
     text-align: center;
   }
+}
+.about-section-img div {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: transparent;
 }
 @media (max-width: 575.98px) {
   .about-section-img img {
@@ -49539,7 +49554,7 @@ textarea.form-control-lg {
   justify-content: center;
   background: conic-gradient(#1778F2 0deg, #e9ecef 0deg);
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 301px) {
   .progress-bar {
     width: 7rem;
     height: 7rem;
@@ -49568,6 +49583,9 @@ textarea.form-control-lg {
 }
 
 @keyframes progress-60 {
+  0% {
+    background: conic-gradient(#1778F2 0deg, #e9ecef 0deg);
+  }
   5% {
     background: conic-gradient(#1778F2 10.8deg, #e9ecef 0deg);
   }
@@ -49636,6 +49654,9 @@ textarea.form-control-lg {
 }
 
 @keyframes progress-80 {
+  0% {
+    background: conic-gradient(#1778F2 0deg, #e9ecef 0deg);
+  }
   5% {
     background: conic-gradient(#1778F2 14.4deg, #e9ecef 0deg);
   }
@@ -49704,6 +49725,9 @@ textarea.form-control-lg {
 }
 
 @keyframes progress-55 {
+  0% {
+    background: conic-gradient(#1778F2 0deg, #e9ecef 0deg);
+  }
   5% {
     background: conic-gradient(#1778F2 9.9deg, #e9ecef 0deg);
   }
@@ -74553,6 +74577,30 @@ textarea.form-control-lg {
   object-fit: cover;
 }
 
+.yt-cover {
+  position: relative;
+  height: 15rem;
+  opacity: 1;
+  transition: opacity 2s;
+}
+.yt-cover-img span {
+  width: 100%;
+  height: 15rem !important;
+}
+.yt-cover-img span img {
+  object-fit: cover;
+}
+.yt-cover .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.yt-cover .play-btn i {
+  font-size: 3rem;
+  color: red;
+}
+
 :root {
   --bs-blue: #1778F2;
   --bs-indigo: #6610f2;
@@ -82792,7 +82840,7 @@ textarea.form-control-lg {
 .footer-icon span {
   font-size: 1rem;
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 301px) {
   .footer-icon span {
     font-size: 0.8rem;
   }

@@ -33,16 +33,16 @@ function Navbar() {
                             </CloseMenuButton>
 
                             <div className='d-flex smp-navbar-links-content'>
-                                <NavLink href='#home' label={'Home'} 
+                                <NavLink href='#home' label={'Home'} togglerNavbar={togglerNavbar}
                                     icon={<i className="bi bi bi-lightbulb"></i>} />
 
-                                <NavLink href='#skills' label={'Skills'} 
+                                <NavLink href='#skills' label={'Skills'} togglerNavbar={togglerNavbar}
                                     icon={<i className="bi bi-house-door"></i>} />
 
-                                <NavLink href='#educations' label={'Education'} 
+                                <NavLink href='#educations' label={'Education'} togglerNavbar={togglerNavbar}
                                     icon={<i className="bi bi-mortarboard"></i>} />
 
-                                <NavLink href='#projects' label={'Projects'} 
+                                <NavLink href='#projects' label={'Projects'} togglerNavbar={togglerNavbar}
                                     icon={<i className="bi bi-award"></i>} />
                             </div>
                         </div>

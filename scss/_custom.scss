@@ -22,7 +22,9 @@ $container-max-widths: (
   xl: 1024px,
   xxl: 1140px
 );
-// @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// My custom variables
+$xxs-device:301px;
 
 
 // Configuration
