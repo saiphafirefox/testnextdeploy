@@ -53,8 +53,9 @@
         }
 
         &-show{
-
-            height: 13.5rem !important;
+            @include media-breakpoint-down(sm){
+                height: 13.5rem !important;
+            }
         
         }
         transition: height 0.2s;
