@@ -34,10 +34,10 @@ function Navbar() {
 
                             <div className='d-flex smp-navbar-links-content'>
                                 <NavLink href='#home' label={'Home'} togglerNavbar={togglerNavbar}
-                                    icon={<i className="bi bi bi-lightbulb"></i>} />
+                                    icon={<i className="bi bi-house-door"></i>} />
 
                                 <NavLink href='#skills' label={'Skills'} togglerNavbar={togglerNavbar}
-                                    icon={<i className="bi bi-house-door"></i>} />
+                                    icon={<i className="bi bi bi-lightbulb"></i>} />
 
                                 <NavLink href='#educations' label={'Education'} togglerNavbar={togglerNavbar}
                                     icon={<i className="bi bi-mortarboard"></i>} />

@@ -17,7 +17,7 @@ function SchoolProject() {
             <YoutubeVideo url="https://www.youtube.com/embed/CIGVztbXEic?rel=0&autoplay=1"
                 coverImg={voice_rec} title="Control Arduino with voice recognition using C# programming"/>
             <YoutubeVideo url="https://www.youtube.com/embed/GVLbO-XuglU?rel=0&autoplay=1"
-                coverImg={iot} title="Internet of things with Arduino ES6 & PHP Server"/>
+                coverImg={iot} title="Internet of things with NodeMCU ESP8266 & PHP Server"/>
             <YoutubeVideo url="https://www.youtube.com/embed/BlnrbDlhXpA?rel=0&autoplay=1"
                 coverImg={mbot} title="mBot object avoiding & line following with Scratch Programming"/>
         </div>
