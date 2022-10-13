@@ -22,8 +22,8 @@ function Introduction() {
               </span>
               
               <p className='para-text-dark'>
-                Interested in software development. 
-                Willing to help society through technology.
+                Passionated about software development. 
+                Willing to help society solve problems through technology.
               </p>
               <a className='btn btn-sm btn-primary text-white fs-5' type='button'
               href='https://drive.google.com/file/d/1vFitTWRlaN1SLeexa8lFzvkP6ctoyVff/view'
