@@ -22,8 +22,8 @@ module.exports = {
           ],
           css:["./styles/css/main.css"],
           defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
-          safelist: ["html", "body",/transition/,/collap/,/transform/,/carousel/],
-        //   safelist.standard:[/transition/,/collap/,/transform/,/carousel/]
+          safelist: ["html", "body",/transition/,/collap/,/transform/,/carousel/,/progress-bar/],
+          
         }
       ],
     ]

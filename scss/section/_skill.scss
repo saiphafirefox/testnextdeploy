@@ -6,7 +6,7 @@
   width: 10rem;
   height: 10rem;
 
-  @media screen and (max-width:300px) {
+  @media screen and (max-width:$xxs-device) {
     width: 7rem;
     height: 7rem;
   }
@@ -47,7 +47,7 @@ $degress: 60,80,55;
   }
   @keyframes progress-#{$num} {
   
-    @for $i from 1 to 21 {
+    @for $i from 0 to 21 {
       #{$i*5}#{"%"} {background: conic-gradient(#1778F2 #{(($i*5) * calc($num/100) )* 3.6}deg , #e9ecef 0deg);}
     }
   }

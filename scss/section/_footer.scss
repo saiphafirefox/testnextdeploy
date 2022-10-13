@@ -18,7 +18,7 @@
 
     span {
         font-size: 1rem;
-        @media screen and (max-width:300px){
+        @media screen and (max-width:$xxs-device){
             font-size: 0.8rem;
         }
     }

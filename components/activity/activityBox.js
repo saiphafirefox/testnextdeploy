@@ -9,7 +9,7 @@ function ActivityBox({img, label, blurFilePath}) {
             alt='Activity at previous at institution' />
             <div className='activity-box-footer'>
                 <div className='p-2'>
-                    <p className='m-0'>{label}</p>
+                    <p className='m-0 para-text-dark'>{label}</p>
                 </div>
             </div>
         </div>

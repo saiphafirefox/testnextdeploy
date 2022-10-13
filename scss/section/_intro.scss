@@ -3,9 +3,13 @@
 
 
 
-.intro-section{
+.avatar{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
     @include media-breakpoint-down(sm){
-        text-align: center;
+        margin: auto;
     }
 }
 
@@ -17,30 +21,30 @@
     width: 0;
     display: block;
     white-space: nowrap;
-    @media screen and (max-width:300px){
+    @media screen and (max-width:$xxs-device){
         animation: typewriter-xs 3s steps(40) 0.5s 1 normal both, 
-        blinkingCursor 500ms steps(40) infinite normal;
+        blinkingCursor 500ms steps(40) 1 normal;
     }
-    @media screen and (min-width:300px){
+    @media screen and (min-width:$xxs-device){
         animation: typewriter 3s steps(40) 0.5s 1 normal both, 
-        blinkingCursor 500ms steps(40) infinite normal;
+        blinkingCursor 500ms steps(40) 1 normal;
     }
     
 }
 .desc-text-1{
     font-size: 1.3rem;
     color: $gray-700;
-    @media screen and (max-width:300px){
+    @media screen and (max-width:$xxs-device){
         font-size: 1rem;
     }
 }
 .text-developer{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: $primary;
     font-family: 'Poppins', sans-serif;
     border: none !important;
-    @media screen and (max-width:300px){
+    @media screen and (max-width:$xxs-device){
         font-size: 1.1rem;
     }
 }

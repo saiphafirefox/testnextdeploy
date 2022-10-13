@@ -1,5 +1,9 @@
 import React from 'react'
-import EmbededYoutube from './EmbededYoutube'
+import YoutubeVideo from './YoutubeVideo'
+import faceDetection from '../../public/images/thumbnail/face_detection.jpg'
+import iot from '../../public/images/thumbnail/iot.jpg'
+import mbot from '../../public/images/thumbnail/mbot.jpg'
+import voice_rec from '../../public/images/thumbnail/voice_rec.jpg'
 
 function SchoolProject() {
   return (
@@ -8,34 +12,14 @@ function SchoolProject() {
                 <span className='text-2'>School Projects</span>
             </div>
         <div className='row gy-5'>
-            <EmbededYoutube title="Face detection game using Tensorflow.js" >
-                <iframe loading='lazy' className='embeded-youtube' 
-                src="https://www.youtube.com/embed/Ki4RgO5zAJw?rel=0" 
-                title="Face detection game with Tensorflow.js" frameBorder="0"
-                
-                allow="accelerometer;fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
-            </EmbededYoutube>
-            
-            <EmbededYoutube title="Control Arduino with voice recognition using C# programming">
-                <iframe loading='lazy' className='embeded-youtube' 
-                src="https://www.youtube.com/embed/CIGVztbXEic" 
-                title="Control Arduino with voice recognition using C# programming language" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-            </EmbededYoutube>
-            <EmbededYoutube title="Internet of things project" >
-                <iframe loading='lazy' className='embeded-youtube' 
-                src="https://www.youtube.com/embed/GVLbO-XuglU" 
-                title="Internet of things with Arduino ES6" frameBorder="0" 
-                allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
-            </EmbededYoutube>
-            <EmbededYoutube title="mBot object avoiding and line following with Scratch programming" >
-                    <iframe  loading='lazy' className='embeded-youtube' 
-                    src="https://www.youtube.com/embed/BlnrbDlhXpA" 
-                    title="mBot object avoiding and line following with Scratch Programming" 
-                    frameBorder="0" 
-                    allow="accelerometer; autoplay; fullscreen; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
-                </EmbededYoutube>
+            <YoutubeVideo url="https://www.youtube.com/embed/Ki4RgO5zAJw?rel=0&autoplay=1"
+                coverImg={faceDetection} title="Face detection game with Tensorflow.js"/>
+            <YoutubeVideo url="https://www.youtube.com/embed/CIGVztbXEic?rel=0&autoplay=1"
+                coverImg={voice_rec} title="Control Arduino with voice recognition using C# programming"/>
+            <YoutubeVideo url="https://www.youtube.com/embed/GVLbO-XuglU?rel=0&autoplay=1"
+                coverImg={iot} title="Internet of things with Arduino ES6 & PHP Server"/>
+            <YoutubeVideo url="https://www.youtube.com/embed/BlnrbDlhXpA?rel=0&autoplay=1"
+                coverImg={mbot} title="mBot object avoiding & line following with Scratch Programming"/>
         </div>
     </div>
   )
