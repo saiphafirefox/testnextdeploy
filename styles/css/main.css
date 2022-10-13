@@ -24744,8 +24744,10 @@ textarea.form-control-lg {
     display: flex;
   }
 }
-.smp-navbar-links-container-show {
-  height: 13.5rem !important;
+@media (max-width: 575.98px) {
+  .smp-navbar-links-container-show {
+    height: 13.5rem !important;
+  }
 }
 .smp-navbar-links-container a {
   text-decoration: none;
