@@ -18,9 +18,10 @@ function About() {
                 <div className='col-sm-12 col-md-6 about-section-desc'>
                     <span className='text-2 text-light'>Who am I?</span>
                     <p className='para-text-light mt-3'>
-                        I am a MERN Stack developer. Aspire to create 
-                        performant and delightful software for end users.
-                        I am also a badminton player 🏸
+                        I am a MERN Stack web developer with 2+ years coding experience. Currently work for myself as a freelancer.
+                        Aspire to solve real life problems with software technology. I&apos;m a good team player.
+                        Also a badminton player 🏸✌️
+                        
                     </p>
                     <a href='https://drive.google.com/file/d/1vFitTWRlaN1SLeexa8lFzvkP6ctoyVff/view'
                      target="_blank" rel="noreferrer"
