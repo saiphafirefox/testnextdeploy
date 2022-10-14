@@ -42,6 +42,7 @@ function ExtraSkill() {
                     <div className='pt-3'>
                         <ProgressBar percentage={60} label="Nodejs" />
                         <ProgressBar percentage={40} label="Linux" />
+                        <ProgressBar percentage={50} label="PHP" />
                     </div>
                 </div>
             </div>

@@ -14,7 +14,7 @@ function Education() {
                     <p className='para-text-light'>2016-2017</p>
                 </div>
                 <div className='col-12 col-sm-12 col-md-6 mt-3 mt-md-5 pt-md-5'>
-                    <span className='text-3'><i className="bi bi-mortarboard"></i> Colledge</span>
+                    <span className='text-3'><i className="bi bi-mortarboard"></i> College</span>
                     <span className='para-text-light'>MTU, Mandalay</span>
                     <p className='para-text-light'>2017-present</p>
                 </div>
