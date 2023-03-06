@@ -1,6 +1,7 @@
-import Image from 'next/image'
+
 import React from 'react'
-import myImg from '../../public/images/me.png'
+import AboutDescription from './AboutDescription'
+import AboutImage from './AboutImage'
 
 function About() {
   return (
@@ -9,25 +10,11 @@ function About() {
         <div className='container about-section-container'>
             <div className='row align-items-center'>
                 <div className='col-sm-12 col-md-6 about-section-img'>
-                    <div>
-                        <Image className='img-fluid' src={myImg} width={350} height={350}
-                        placeholder="blur" blurDataURL='/images/blur/me.png' 
-                        alt="Sai Marn Pha Image" />
-                    </div>
+                    <AboutImage/>
                 </div>
+                
                 <div className='col-sm-12 col-md-6 about-section-desc'>
-                    <span className='text-2 text-light'>Who am I?</span>
-                    <p className='para-text-light mt-3'>
-                        I am a MERN Stack web developer with 2+ years coding experience. Currently work for myself as a freelancer.
-                        Aspire to solve real life problems with software technology. I&apos;m a good team player.
-                        Also a badminton player 🏸✌️
-                        
-                    </p>
-                    <a href='https://drive.google.com/file/d/1vFitTWRlaN1SLeexa8lFzvkP6ctoyVff/view'
-                     target="_blank" rel="noreferrer"
-                    type='button' className='btn btn-outline-primary mt-3 cv-button'>
-                        Download CV <i className="bi bi-download"></i>
-                    </a>
+                    <AboutDescription/>
                 </div>
             </div>
         </div>
