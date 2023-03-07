@@ -1,6 +1,6 @@
 import React from 'react'
 import About from '../components/about/About';
-import Activity from '../components/activity/Activity';
+import Activities from '../components/activity/Activities';
 import Education from '../components/education/Education';
 import Footer from '../components/footer/Footer';
 import Introduction from '../components/introduction/introduction';
@@ -17,7 +17,7 @@ function Home() {
       <About/>
       <Skill />
       <Education/>
-      <Activity/>
+      <Activities/>
       <Project/>
       <Footer/>
     </>
