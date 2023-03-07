@@ -4,7 +4,7 @@ import Activities from '../components/activity/Activities';
 import Education from '../components/education/Education';
 import Footer from '../components/footer/Footer';
 import Introduction from '../components/introduction/introduction';
-import Project from '../components/project/Project';
+import Projects from '../components/project/Projects';
 import Skill from '../components/skill/Skill';
 import Header from '../components/header';
 
@@ -18,7 +18,7 @@ function Home() {
       <Skill />
       <Education/>
       <Activities/>
-      <Project/>
+      <Projects/>
       <Footer/>
     </>
   )

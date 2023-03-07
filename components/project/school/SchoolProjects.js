@@ -1,9 +1,9 @@
 import React from 'react'
 import YoutubeVideo from './YoutubeVideo'
-import faceDetection from '../../public/images/thumbnail/face_detection.jpg'
-import iot from '../../public/images/thumbnail/iot.jpg'
-import mbot from '../../public/images/thumbnail/mbot.jpg'
-import voice_rec from '../../public/images/thumbnail/voice_rec.jpg'
+import faceDetection from '../../../public/images/thumbnail/face_detection.jpg'
+import iot from '../../../public/images/thumbnail/iot.jpg'
+import mbot from '../../../public/images/thumbnail/mbot.jpg'
+import voice_rec from '../../../public/images/thumbnail/voice_rec.jpg'
 
 function SchoolProject() {
   return (

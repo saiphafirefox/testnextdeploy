@@ -13,8 +13,7 @@ function YoutubeVideo({url,title, coverImg}) {
         
         {
             play ?
-                <Iframe url={url}
-                title={title} />
+                <Iframe url={url} title={title} />
                 :
                 <IframeCover title={title} src={coverImg} startVideo={setPlay} />
         }
