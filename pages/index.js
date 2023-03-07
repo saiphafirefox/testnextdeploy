@@ -8,7 +8,7 @@ import Projects from '../components/project/Projects';
 import Skill from '../components/skill/Skill';
 import Header from '../components/header';
 
-function Home() {
+export default function Home() {
   return (
     <>
       <Header/>
@@ -23,5 +23,3 @@ function Home() {
     </>
   )
 }
-
-export default Home
