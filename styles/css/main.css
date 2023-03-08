@@ -66299,6 +66299,9 @@ textarea.form-control-lg {
   align-items: center;
   text-align: center;
 }
+.activity-box-footer div p a {
+  text-decoration: none;
+}
 
 :root {
   --bs-blue: #1778F2;

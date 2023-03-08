@@ -45,12 +45,12 @@ export const activities = [
   },
   {
     label : <>MongoDB Certificates<a className='ms-1' target="_blank" rel="noreferrer"
-      href='https://www.linkedin.com/in/sai-marn-pha-071115237'>See More</a></>,
+      href='https://www.linkedin.com/in/sai-marn-pha-071115237'>Verify Certs</a></>,
     image : MOngoDBCertificate
   },
   {
     label : <>Redis Certificates<a className='ms-1' target="_blank" rel="noreferrer"
-      href='https://www.linkedin.com/in/sai-marn-pha-071115237'>See More</a></>,
+      href='https://www.linkedin.com/in/sai-marn-pha-071115237'>Verify Certs</a></>,
     image : RedisCertificate
   }
 
