@@ -1,7 +1,7 @@
 
 import React from 'react'
-import Avatar from './avatar'
-import Description from './description'
+import Avatar from './Avatar'
+import Description from './Description'
 
 export default function Introduction() {
   return (

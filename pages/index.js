@@ -3,7 +3,7 @@ import About from '../components/about/About';
 import Activities from '../components/activity/Activities';
 import Education from '../components/education/Education';
 import Footer from '../components/footer/Footer';
-import Introduction from '../components/introduction/introduction';
+import Introduction from '../components/introduction/Intorduction';
 import Projects from '../components/project/Projects';
 import Skills from '../components/skill/Skills';
 import Header from '../components/header';
