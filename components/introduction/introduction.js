@@ -12,7 +12,6 @@ export default function Introduction() {
           <Description/>
         </div>
       </div>
-      
     </div>
   )
 }
