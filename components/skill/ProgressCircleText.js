@@ -1,8 +1,6 @@
 import React from 'react'
 
-function ProgressText({percent,label}) {
-    
-
+export default function ProgressCircleText({percent,label}) {
   return (
     <div className='progress-bar-textbox text-center '>
       <span className='percent'>{percent}%</span>
@@ -10,5 +8,3 @@ function ProgressText({percent,label}) {
     </div>
   )
 }
-
-export default ProgressText
