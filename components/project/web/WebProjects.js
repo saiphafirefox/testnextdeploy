@@ -18,27 +18,39 @@ export default function WebProjects() {
 
           <div className="carousel-item active" data-bs-interval={carouselInterval}>
             <CarouselItem img={AsenwiLandingImg}
-              demoLink="https://asenwi.com"
-              sourceCode="https://github.com/SaiPha454/asenwi"
-              text="Landing Page" />
+            demoLink="https://asenwi.com"
+            sourceCode="https://github.com/SaiPha454/asenwi"
+            text="Landing Page" 
+            />
           </div>
           <div className="carousel-item" data-bs-interval={carouselInterval}>
             <CarouselItem img={MyPortfolioImg} 
-              demoLink="https://saimarnpha.com"
-              sourceCode="https://github.com/SaiPha454/portfolio"
-              text="My Portfolio Website" />
+            demoLink="https://saimarnpha.com"
+            sourceCode="https://github.com/SaiPha454/portfolio"
+            text="My Portfolio Website" 
+            />
           </div>
           <div className="carousel-item" data-bs-interval={carouselInterval}>
             <CarouselItem img={ApiImg} 
-              demoLink="https://github.com/SaiPha454/POS"
-              sourceCode="https://github.com/SaiPha454/POS"
-              text="POS Api Porject" />
+            demoLink="https://github.com/SaiPha454/POS"
+            sourceCode="https://github.com/SaiPha454/POS"
+            text="POS Api Porject" 
+            />
           </div>
         </div>
         <div className="carousel-indicators">
-          <button type="button" data-bs-target="#webProjectCarousel" data-bs-slide-to="0" className="active carousel-indicator-index mx-2" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#webProjectCarousel" data-bs-slide-to="1" className='carousel-indicator-index mx-2' aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#webProjectCarousel" data-bs-slide-to="2" className='carousel-indicator-index mx-2' aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#webProjectCarousel" 
+          data-bs-slide-to="0" className="active carousel-indicator-index mx-2" 
+          aria-current="true" aria-label="Slide 1"
+          />
+          <button type="button" data-bs-target="#webProjectCarousel" 
+          data-bs-slide-to="1" className='carousel-indicator-index mx-2' 
+          aria-label="Slide 2"
+          />
+          <button type="button" data-bs-target="#webProjectCarousel" 
+          data-bs-slide-to="2" className='carousel-indicator-index mx-2' 
+          aria-label="Slide 3"
+          />
         </div>
       </div>
     </>
