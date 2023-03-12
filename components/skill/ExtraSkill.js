@@ -1,54 +1,71 @@
 import React,{useEffect} from 'react'
 import ProgressBar from './ProgressBar'
 
-function ExtraSkill() {
+export default function ExtraSkill() {
 
     useEffect(()=>{
-        let progress_bars = document.querySelectorAll('.extra-skill-progress-bar-value');
-        let observer_callback=(entries)=>{
+        let progressBars = document.querySelectorAll('.extra-skill-progress-bar-value');
+        let observerCallback=(progressBar)=>{
             
-          entries.forEach((entry)=>{
-            let width = entry.target.getAttribute('data-percentage');
-             if(entry.isIntersecting){
-                entry.target.style.width= `${width}%`;
-                progress_bar_obersever.unobserve(entry.target);
-             }
+            progressBar.forEach((bar)=>{
+            let width = bar.target.getAttribute('data-percentage');
+                if(bar.isIntersecting){
+                bar.target.style.width= `${width}%`;
+                progressBarsObserver.unobserve(bar.target);
+                }
             
-          })
+            })
         }
-        let progress_bar_obersever = new IntersectionObserver(observer_callback, {threshold:0.8})
-        progress_bars.forEach((element)=>{
-            progress_bar_obersever.observe(element)
+        let progressBarsObserver = new IntersectionObserver(observerCallback, {threshold:0.8})
+        progressBars.forEach((element)=>{
+            progressBarsObserver.observe(element)
         })
-      },[])
+    },[])
 
-  return (
-    <div className='extra-skill mt-5 pt-5'>
-        <div className='row'>
-            <div className='col-12 col-sm-12 col-md-6 '>
-                <div className='extra-skill-front-end pb-3'>
-                    <span className='text-3'> <i className="bi bi-code-slash"></i> Front-end</span>
-                    <div className='pt-3'>
-                        <ProgressBar percentage={60} label="HTML" />
-                        <ProgressBar percentage={60} label="CSS" />
-                        <ProgressBar percentage={50} label="SASS" />
-                        <ProgressBar percentage={60} label="JS" />
-                    </div>
-                </div>
-            </div>
-            <div className='col-12 col-sm-12 col-md-6 back-end'>
-                <div className='back-end'>
-                    <span className='text-3'> <i className="bi bi-hdd-rack"></i> Back-end</span>
-                    <div className='pt-3'>
-                        <ProgressBar percentage={60} label="Nodejs" />
-                        <ProgressBar percentage={40} label="Linux" />
-                        <ProgressBar percentage={50} label="PHP" />
-                    </div>
-                </div>
+    return (
+        <div className='extra-skill mt-5 pt-5'>
+            <div className='row'>
+                {
+                    extraSkills.map((eachSkillType, index) => {
+                        if(eachSkillType.type && eachSkillType.skills) {
+                            return (
+                                <div className='col-12 col-sm-12 col-md-6' key={eachSkillType.label + index}>
+                                    <div className={`${eachSkillType.className }`}>
+                                        <span className='text-3'> <i className= {`${ eachSkillType.icon }`} ></i> {eachSkillType.label}</span>
+                                        <div className='pt-3'>
+                                            {
+                                                eachSkillType.skills.map(({percentage, label}, index) => {
+                                                    return <ProgressBar percentage={percentage} label={`${label}`} key={ label + index} />
+                                                })
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        }
+                    })
+                }
             </div>
         </div>
-    </div>
-  )
+    )
 }
 
-export default ExtraSkill
+const extraSkills = [
+    {   type: "font-end", className: "extra-skill-front-end pb3", icon: "bi bi-code-slash", label: "Front-end", 
+        skills: [
+            { label: "HTML", percentage: 40 },
+            { label: "CSS", percentage: 60 },
+            { label: "SASS", percentage: 50 },
+            { label: "JS", percentage: 80 },
+        ]
+    },
+    {   type: "back-end", className: "extra-skill-back-end", icon: "bi bi-hdd-rack", label: "Back-end",
+        skills: [
+            { label: "HTML", percentage: 40 },
+            { label: "CSS", percentage: 60 },
+            { label: "SASS", percentage: 50 },
+            { label: "JS", percentage: 80 },
+        ]
+    },
+]
+

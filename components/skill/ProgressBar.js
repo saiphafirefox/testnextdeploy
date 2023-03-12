@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ProgressBar({percentage, label}) {
+export default function ProgressBar({percentage, label}) {
     
 
   return (
@@ -16,5 +16,3 @@ function ProgressBar({percentage, label}) {
     
   )
 }
-
-export default ProgressBar

@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import React from 'react'
 
-function WebProject({img, text, demoLink, sourceCode}) {
+export default function CarouselItem({img, text, demoLink, sourceCode}) {
    
   return (
     <div className='web-project'>
         <div className='row'>
             <div className='col-sm-12 col-md-6'>
-                <Image src={img} className="img-fluid" alt='Web Project' />
+                <Image src={img} className="img-fluid" alt='Web Project' placeholder='blur' />
             </div>
             <div className='col-sm-12 col-md-6'>
                 <div className='web-project-description h-100 text-center d-flex flex-column justify-content-center'>
@@ -25,4 +25,3 @@ function WebProject({img, text, demoLink, sourceCode}) {
   )
 }
 
-export default WebProject

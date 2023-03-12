@@ -1,9 +1,9 @@
 import React from 'react'
 
-function NavLink({href='#', label, icon,togglerNavbar}) {
+export default function NavLink({href='#', label, icon,toggleNavbar}) {
   return (
     <div className='smp-nav-item p-1'>
-        <a href={href} onClick={togglerNavbar}>
+        <a href={href} onClick={toggleNavbar}>
             <div className='icon'>
                {icon}
             </div>
@@ -12,5 +12,3 @@ function NavLink({href='#', label, icon,togglerNavbar}) {
     </div>
   )
 }
-
-export default NavLink

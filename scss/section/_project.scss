@@ -76,12 +76,10 @@ $yt-iframe-height : 15rem;
     opacity: 1;
     transition: opacity 2s;
     &-img {
-        span {
-            width: 100%;
+        img {
+            object-fit: cover;
             height: $yt-iframe-height !important;
-            img {
-                object-fit: cover;
-            }
+            width: 100%;
         }
     }
     .play-btn{
