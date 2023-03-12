@@ -1,14 +1,14 @@
 import React from 'react'
 
-function CloseMenuButton({togglerNavbar, children}) {
+export default function CloseMenuButton({toggleNavbar, icon}) {
   return (
     <div className='d-flex d-sm-none d-md-none justify-content-end p-3'>
-        <button  onClick={togglerNavbar} id='navbar-toggler' 
-            className='navbar-toggler navbar-toggler-button smp-navbar-toggler'>
-                {children}
+        <button  
+          onClick={toggleNavbar} 
+          id='navbar-toggler' 
+          className='navbar-toggler navbar-toggler-button smp-navbar-toggler'>
+            {icon}
         </button>
     </div>
   )
 }
-
-export default CloseMenuButton

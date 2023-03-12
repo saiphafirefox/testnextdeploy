@@ -1,17 +1,15 @@
-import React,{useEffect, useRef} from 'react'
+import React,{ useRef } from 'react'
 import CloseMenuButton from './CloseMenuButton';
 import NavLink from './NavLink';
 import OpenMenuButton from './OpenMenuButton';
 import Link from 'next/link';
 
-function Navbar() {
+export default function Navbar() {
 
     const navLinkContainerRef = useRef(null);
-    
-    const togglerNavbar=()=>{
+    const toggleNavbar=()=>{
         const navClassList = navLinkContainerRef.current.classList;
         navClassList.toggle('smp-navbar-links-container-show');
-        
     }
 
   return (
@@ -25,33 +23,24 @@ function Navbar() {
                 {/* Column Two */}
                 <div className='smp-navbar-collapse col-5 col-sm-8 col-md-9 col-lg-9'>
                     <div className='smp-navbar-collapse-content d-flex align-items-center'>
-                        
-                        <div ref={navLinkContainerRef} id='nav-links-container' 
-                            className='smp-navbar-links-container'>
-                            <CloseMenuButton togglerNavbar={togglerNavbar} >
-                                <i className="bi bi-x-lg"></i>
-                            </CloseMenuButton>
-
+                        <OpenMenuButton toggleNavbar={toggleNavbar} icon = { <i className="bi bi-list" /> }  />
+                        <div ref={navLinkContainerRef} id='nav-links-container' className='smp-navbar-links-container'>
+                            <CloseMenuButton toggleNavbar={toggleNavbar} icon = { <i className="bi bi-x-lg" /> }/>
                             <div className='d-flex smp-navbar-links-content'>
-                                <NavLink href='#home' label={'Home'} togglerNavbar={togglerNavbar}
-                                    icon={<i className="bi bi-house-door"></i>} />
-
-                                <NavLink href='#skills' label={'Skills'} togglerNavbar={togglerNavbar}
-                                    icon={<i className="bi bi bi-lightbulb"></i>} />
-
-                                <NavLink href='#educations' label={'Education'} togglerNavbar={togglerNavbar}
-                                    icon={<i className="bi bi-mortarboard"></i>} />
-
-                                <NavLink href='#projects' label={'Projects'} togglerNavbar={togglerNavbar}
-                                    icon={<i className="bi bi-award"></i>} />
+                                {
+                                    links.map( ({href, label, icon}, index) => {
+                                        return (
+                                            <NavLink href={`#${href}`} label={`${label}`} 
+                                            toggleNavbar={toggleNavbar}
+                                            icon={ <i className={`${icon}`} /> }
+                                            key = { label + index }
+                                            />
+                                        )
+                                    })
+                                }
                             </div>
                         </div>
-                        <OpenMenuButton togglerNavbar={togglerNavbar} >
-                            <i className="bi bi-list"></i>
-                        </OpenMenuButton>
-                        
                     </div>
-
                 </div>
             </div>
         </div>
@@ -59,4 +48,25 @@ function Navbar() {
   )
 }
 
-export default Navbar
+const links = [
+    {
+        href: "home",
+        label: "Home",
+        icon : "bi bi-house-door"
+    },
+    {
+        href: "skills",
+        label: "Skills",
+        icon : "bi bi bi-lightbulb"
+    },
+    {
+        href: "educations",
+        label: "Education",
+        icon : "bi bi-mortarboard"
+    },
+    {
+        href: "projects",
+        label: "Projects",
+        icon : "bi bi-award"
+    },
+];
