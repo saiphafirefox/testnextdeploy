@@ -3,7 +3,7 @@ import React from 'react'
 export default function Description() {
   return (
     <div className='col-sm-12 col-md-6 text-start order-md-first'>
-        <span className='text-1 text-dark'>Hi, I&apos;m Sai.</span>
+        <span className='text-1 text-dark'>Hi, I&apos;m Sai Pha.</span>
         <span className='desc-text-1 animated-text'>
             I am a <span className='text-developer'>Junior Web Developer</span>
         </span>
